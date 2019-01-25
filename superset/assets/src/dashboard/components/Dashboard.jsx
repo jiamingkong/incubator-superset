@@ -20,7 +20,7 @@ import React from 'react';
 import { Modal } from 'react-bootstrap';
 import PropTypes from 'prop-types';
 import { t } from '@superset-ui/translation';
-import $ from 'jquery'
+import $ from 'jquery';
 
 import getChartIdsFromLayout from '../util/getChartIdsFromLayout';
 import DashboardBuilder from '../containers/DashboardBuilder';
@@ -228,7 +228,7 @@ class Dashboard extends React.PureComponent {
       const isK = event.key === 'k' || event.keyCode === 83;
       if (isK) {
         this.setState({ showOmni: !this.state.showOmni });
-        console.log($('.modal-dialog:first input').focus());
+        $('.modal-dialog:first input').focus();
       }
     }
   }
